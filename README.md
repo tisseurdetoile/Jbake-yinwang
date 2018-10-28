@@ -1,4 +1,4 @@
-[![Build Status](https://www.travis-ci.org/tisseurdetoile/jbake-yinwang.svg?branch=master(https://www.travis-ci.org/tisseurdetoile/jbake-yinwang)
+[![Build Status](https://www.travis-ci.org/tisseurdetoile/jbake-yinwang.svg?branch=master)](https://www.travis-ci.org/tisseurdetoile/jbake-yinwang)
 
 # Jbake-yinwang thème
 
@@ -27,7 +27,7 @@ Sous licence [the MIT license](/LICENSE).
 
 For our english friend
 
-# Jbake-uno thème
+# Jbake-yinwang theme
 
 ---
 

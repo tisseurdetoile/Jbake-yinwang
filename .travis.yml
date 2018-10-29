@@ -18,6 +18,7 @@ before_install:
   - source "/home/travis/.sdkman/bin/sdkman-init.sh"
   - sdk install jbake $JBAKE_VERSION < /dev/null
   - sdk use jbake $JBAKE_VERSION
+  - chmod +x scripts/travis_build
 script: scripts/travis_build
 notifications:
   email:

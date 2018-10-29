@@ -199,8 +199,10 @@ body.mobile .side-btn {
 .side-btn a {
   display: block;
   color: #a57474;
+  font-size: 22px;
 }
 
+/* START Attempt to have tag in the side */
 .side-btn span {
   display: block;
   color: #a57474;
@@ -210,6 +212,7 @@ body.mobile .side-btn {
   list-style-type: '🔖';
   color: #a57474;
 }
+/* END Attempt to have tag in the side */
 
 .back {
   -ms-transform: rotate(7deg);

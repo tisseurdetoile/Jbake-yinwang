@@ -1,27 +1,5 @@
 <#include "head.ftl">
 <body>
-   <script>
-        window.addEventListener("resize", resizeThrottler, false);
-
-        var resizeTimeout;
-        function resizeThrottler() {
-
-            if ( !resizeTimeout ) {
-                resizeTimeout = setTimeout(function() { resizeTimeout = null; actualResizeHandler();}, 66);
-            }
-        }
-
-        actualResizeHandler()
-        function actualResizeHandler() {
-                if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent))
-                {
-                    document.body.classList.add('mobile');
-                }else{
-                    document.body.classList.remove('mobile');
-                }
-        }
-    </script>
-
 <#include "menu.ftl">
 <div class="outer">
 <br />

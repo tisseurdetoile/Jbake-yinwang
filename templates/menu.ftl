@@ -64,7 +64,7 @@
 			        </#if>
                     <#-- Pages and Archive -->
                     <#list published_pages as page>
-                        <li><a class="nav-item nav-link" href="${page.uri}">${page.title}</a></li>
+                        <li><a class="nav-item nav-link" href="${config.site_baseurl}${page.uri}">${page.title}</a></li>
                     </#list>
                     <#if (config.render_archive)??>
                         <li><a class="nav-item nav-link" title="Archive" href="${config.site_baseurl}${config.archive_file}">

@@ -19,6 +19,8 @@ Jbake-yinwang est un thème minimal, pour Jbake il est basé sur [hugo-yinwang](
 - TravisCI integration
 - Support de la pagination (plus de bidouille :P)
 - Page 404 specifique
+- Liens pour passer d'un article à un autre
+- Partage des posts dans les reseaux sociaux
 
 ## Installer
 
@@ -60,6 +62,8 @@ Jbake-yinwanga minimal, responsive theme for Jbake based on the
 - Travis Integration
 - Pagination support (no more custom :P)
 - custom 404 page
+- Link for Next/previous Post
+- Social network share link in post
 
 ---
 

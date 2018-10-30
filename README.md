@@ -35,6 +35,19 @@ Jbake-yinwang est un thème minimal, pour Jbake il est basé sur [hugo-yinwang](
 - commencer a produire du contenu dans content
 - configurer le blog en éditant jbake.properties
 
+## Mise à jour
+
+- Récuperer une mise à jour
+  - `git checkout upstream`
+  - `git fetch upstream`
+  - `git pull`
+- Rebaser votre travail au dessus
+  - `git checkout master`
+  - `git rebase upstream`
+  - si besoin gerer les conflits
+  - `git push --force-with-lease`
+- Continuer à travailler
+
 ### Travis configuration
 
 - A faire
@@ -79,6 +92,19 @@ Jbake-yinwanga minimal, responsive theme for Jbake based on the
 - `git push -u origin master`
 - start writing content in the content folder
 - configure the blog by editing jbake.properties
+
+## Update
+
+- Fetch update
+  - `git checkout upstream`
+  - `git fetch upstream`
+  - `git pull`
+- Rebase your work On
+  - `git checkout master`
+  - `git rebase upstream`
+  - if you need deal with conflict
+  - `git push --force-with-lease`
+- Keep going
 
 ### Travis integration
 

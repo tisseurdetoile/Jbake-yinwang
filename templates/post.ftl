@@ -11,6 +11,7 @@
 			<br />
 			<br />
 			<br />
+			<#include "sharelink.ftl">
 		</div>
 
 <#include "footer.ftl">

@@ -24,18 +24,40 @@
 
     <meta name="generator" content="JBake">
 
-    <#-- Le styles -->
+    <#-- Le styles commun -->
     <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>stylesheet.css">
 
     <#if (content.title)??>
+      <#-- post and page CSS -->
+      <meta property="og:url" content="${config.site_host}/${content.uri}" />
+      <meta property="og:title" content="${content.title}" />
+
+      <#if (content.summary)??>
+        <meta name="twitter:card" content="${content.summary}" />
+        <meta property="og:description" content="${content.summary}" />
+      </#if>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <#else>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+      <#-- we are in the index or archive-->
+      <meta property="og:title" content="${config.site_title}" />
 
-    <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>home.css">
+      <#if (config.site_description)??>
+        <meta name="twitter:card" content="${config.site_description}" />
+        <meta property="og:description" content="${config.site_description}" />
+      </#if>
+
+      <#-- index and archive CSS -->
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+      <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>home.css">
+    </#if>
+
+    <#if (config.share_twitter)??>
+    <meta name="twitter:site" content="@${config.share_twitter}" />
+    <meta name="twitter:creator" content="@${config.share_twitter}" />
     </#if>
 
     <link rel="manifest" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>site.webmanifest"/>

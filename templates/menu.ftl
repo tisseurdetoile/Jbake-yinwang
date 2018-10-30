@@ -68,7 +68,7 @@
                     </#list>
                     <#if (config.render_archive)??>
                         <li><a class="nav-item nav-link" title="Archive" href="${config.site_baseurl}${config.archive_file}">
-                        <i class="la la-lg la-archive"></i></a></li></a></li>
+                        <i class="la la-lg la-archive"></i></a></li>
                     </#if>
                 </ul>
             </div>

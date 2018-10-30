@@ -21,7 +21,6 @@
 	</#escape>
 	</description>
     </item>
-    <#if (post?counter == config.site_maxarticle?number)><#break></#if>
     </#list>
   </channel>
 </rss>

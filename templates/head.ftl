@@ -51,7 +51,6 @@
       <#-- index and archive CSS -->
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
       <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>home.css">
     </#if>
 
@@ -63,10 +62,13 @@
     <link rel="manifest" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>site.webmanifest"/>
     <link rel="shortcut icon" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>favicon.ico" />
     <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>main.css">
+    <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/line-awesome.min.css">
 
 	<script type="text/javascript">
 	  const baseUrl = '${config.site_baseurl}';
 	  const baseUrlIndex = '${config.site_baseurl}index.html';
-    hljs.initHighlightingOnLoad();
+    <#if (content.title)??>
+      hljs.initHighlightingOnLoad();
+    </#if>
 	</script>
   </head>

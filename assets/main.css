@@ -194,7 +194,7 @@ body.mobile .side-btn {
   -ms-transform: translate(calc(-8vw - 100%), 0);
   -webkit-transform: translate(calc(-8vw - 100%), 0);
   transform: translate(calc(-8vw - 100%), 0);
-  top: 50vh;
+  top: 30vh;
 }
 .side-btn a {
   display: block;
@@ -223,5 +223,4 @@ body.mobile .side-btn {
   -ms-transform: rotate(-7deg);
   -webkit-transform: rotate(-7deg);
   transform: rotate(-7deg);
-  color: #930ee4;
 }

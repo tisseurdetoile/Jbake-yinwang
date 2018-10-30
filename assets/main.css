@@ -224,3 +224,31 @@ body.mobile .side-btn {
   -webkit-transform: rotate(-7deg);
   transform: rotate(-7deg);
 }
+
+.sharelinks {
+  text-align: right;
+}
+
+.sharelinks li {
+  text-align: center;
+  vertical-align: middle;
+  list-style-type: none;
+  display: inline;
+}
+
+.sharelinks li a:link {
+  color: black;
+}
+
+.sharelinks li a:visited {
+  color: black;
+}
+
+.sharelinks lia:hover {
+  color: black;
+  background-color: white;
+}
+
+.sharelinks li a:active {
+  color: black;
+}

@@ -17,6 +17,7 @@ Jbake-yinwang est un thème minimal, pour Jbake il est basé sur [hugo-yinwang](
 - Coloration syntaxique
 - Liens sociaux
 - TravisCI integration
+- Support de la pagination (plus de bidouille :P)
 
 ## Installer
 
@@ -56,6 +57,7 @@ Jbake-yinwanga minimal, responsive theme for Jbake based on the
 - Syntax highlighting
 - Social links
 - Travis Integration
+- Pagination support (no more custom :P)
 
 ---
 

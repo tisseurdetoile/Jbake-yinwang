@@ -8,10 +8,10 @@
 <li><a href="/" class="share-btn"><i class="la la-lg la-share"></i></a></li>
 
 <#if (content.previousContent)??>
-<li><a href="${config.site_host}/${content.previousContent.uri}" class="share-btn">
+<li><a href="${config.site_host}/${content.previousContent.uri}" title="${content.previousContent.title}" class="share-btn">
 <i class="la la-lg la-angle-left"></i></a></li>
 <#else>
-<li><a href="/" class="share-btn">
+<li><a href="/" class="share-btn" title="/">
 <i class="la la-lg la-angle-left"></i></a></li>
 </#if>
 
@@ -35,11 +35,11 @@
     <i class="la la-envelope"></i>
 </a></li>
 
- <#if (post.nextContent)??>
- <li><a href="${config.site_host}/${content.nextContent.uri}" class="share-btn">
+ <#if (content.nextContent)??>
+ <li><a href="${config.site_host}/${content.nextContent.uri}" title="${content.nextContent.title}" class="share-btn">
  <i class="la la-lg la-angle-right"></i></a></li>
  <#else>
- <li><a href="/" class="share-btn">
+ <li><a href="/" class="share-btn" title="/">
 <i class="la la-lg la-angle-right"></i></a></li>
  </#if>
 </ul>

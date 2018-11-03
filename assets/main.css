@@ -102,9 +102,11 @@ a {
   cursor: crosshair;
 }
 
+/*
 a:hover {
   background-color: LightGrey;
 }
+*/
 
 img {
   width: auto;
@@ -191,28 +193,15 @@ body.mobile .side-btn {
 
 .side-btn {
   position: fixed;
-  -ms-transform: translate(calc(-8vw - 100%), 0);
-  -webkit-transform: translate(calc(-8vw - 100%), 0);
-  transform: translate(calc(-8vw - 100%), 0);
+  -ms-transform: translate(calc(-6vw - 100%), 0);
+  -webkit-transform: translate(calc(-6vw - 100%), 0);
+  transform: translate(calc(-6vw - 100%), 0);
   top: 30vh;
 }
 .side-btn a {
   display: block;
-  color: #a57474;
-  font-size: 22px;
+  color: #555;
 }
-
-/* START Attempt to have tag in the side */
-.side-btn span {
-  display: block;
-  color: #a57474;
-}
-
-.side-btn ul {
-  list-style-type: '🔖';
-  color: #a57474;
-}
-/* END Attempt to have tag in the side */
 
 .back {
   -ms-transform: rotate(7deg);
@@ -223,6 +212,7 @@ body.mobile .side-btn {
   -ms-transform: rotate(-7deg);
   -webkit-transform: rotate(-7deg);
   transform: rotate(-7deg);
+  color: black;
 }
 
 .sharelinks {

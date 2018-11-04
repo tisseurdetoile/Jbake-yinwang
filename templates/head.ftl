@@ -1,8 +1,9 @@
+<#ftl output_format="HTML">
 <!DOCTYPE html>
 <html lang="${config.thymeleaf_locale}">
   <head>
     <meta charset="${config.render_encoding}"/>
-    <title><#if content.title??><#escape x as x?xml>${content.title}</#escape><#else>${config.site_title}</#if></title>
+    <title><#if content.title??>${content.title}<#else>${config.site_title}</#if></title>
 
     <#if (content.title)??>
       <meta name="viewport" content="width=device-width, initial-scale=0.5">
@@ -64,7 +65,7 @@
     <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>main.css">
     <link rel="stylesheet" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>css/line-awesome.min.css">
 
-	<script type="text/javascript">
+	<script>
 	  const baseUrl = '${config.site_baseurl}';
 	  const baseUrlIndex = '${config.site_baseurl}index.html';
     <#if (content.title)??>

@@ -20,7 +20,7 @@ jobs:
       - name: Build the site in the javastreets/jbake container
         run: |
           docker run \
-          -v ${{ github.workspace }}:/srv/jbake  -v /tmp/output:/tmp/output \
+          -v ${{ github.workspace }}:/srv/jbake
           javastreets/jbake:2.6.4 /bin/bash -c "jbake -b /srv/jbake"
 
       - name: List Folder

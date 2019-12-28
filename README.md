@@ -48,9 +48,13 @@ Jbake-yinwang est un thème minimal, pour Jbake il est basé sur [hugo-yinwang](
   - `git push --force-with-lease`
 - Continuer à travailler
 
-### Travis configuration
+### Run local docker style
 
-- A faire
+`docker run -v $PWD:/srv/jbake javastreets/jbake:2.6.4 /bin/bash -c "jbake -b /srv/jbake"`
+
+### Github Actions CI configuration
+
+Il suffit d'ajouter les secrets concernant la configuration de votre ftp  (c'est à dire FTP_HOST, FTP_USER, FTP_PASSWORD) dans Settings / Secrets. Vous pouvez voir/modifier le Workflows [ici](.github/workflows/jbake.yml)
 
 ## Demonstration
 

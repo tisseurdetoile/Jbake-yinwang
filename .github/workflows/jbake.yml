@@ -1,0 +1,32 @@
+name: jbake site CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: make output directory
+        run: mkdir -pv -m 777 ${{ github.workspace }}/output
+
+      - name: Build the site in the javastreets/jbake container
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/srv/jbake  -v /tmp/output:/tmp/output \
+          javastreets/jbake:2.6.4 /bin/bash -c "jbake -b /srv/jbake"
+
+      - name: List Folder
+        run: ls ${{ github.workspace }}/output
+
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
+          FTP_SERVER: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          LOCAL_DIR: ${{ github.workspace }}/output
+          REMOTE_DIR: httpdocs
+          ARGS: --delete

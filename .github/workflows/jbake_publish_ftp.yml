@@ -1,11 +1,8 @@
-name: jbake site CI
+name: jbake FTP Publish
 
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '0 1 1 * *'
 
 jobs:
   build:

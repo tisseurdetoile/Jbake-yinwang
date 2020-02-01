@@ -15,10 +15,7 @@ jobs:
         run: mkdir -pv -m 777 ${{ github.workspace }}/output
 
       - name: Build the site in the javastreets/jbake container
-        run: |
-          docker run \
-          -v ${{ github.workspace }}:/srv/jbake
-          javastreets/jbake:2.6.4 /bin/bash -c "jbake -b /srv/jbake"
+        run: docker run -v ${{ github.workspace }}:/srv/jbake javastreets/jbake:2.6.4 /bin/bash -c "jbake -b /srv/jbake"
 
       - name: List Folder
         run: ls ${{ github.workspace }}/output

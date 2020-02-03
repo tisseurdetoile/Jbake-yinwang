@@ -1,6 +1,6 @@
 # Jbake-yinwang thème
 
-[![Build Status](https://www.travis-ci.org/tisseurdetoile/Jbake-yinwang.svg?branch=master)](https://www.travis-ci.org/tisseurdetoile/Jbake-yinwang)
+![jbake site CI](https://github.com/tisseurdetoile/Jbake-yinwang/workflows/jbake%20site%20CI/badge.svg?branch=master)
 
 ---
 
